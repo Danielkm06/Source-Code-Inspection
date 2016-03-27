@@ -45,12 +45,6 @@ class Troco {
 
     class TrocoIterator implements Iterator<PapelMoeda> {
 
-        protected Troco troco;
-
-        public TrocoIterator(Troco troco) {
-            this.troco = troco;
-        }
-
         @Override
         public boolean hasNext() {
             for (int i = 6; i >= 0; i++) {
