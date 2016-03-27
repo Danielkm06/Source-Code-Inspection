@@ -15,7 +15,6 @@ public class PapelMoeda {
     }
 
     public int getQuantidade() {
-        System.out.println("TESTE GIT");
         return quantidade;
     }
 
