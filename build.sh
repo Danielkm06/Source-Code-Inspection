@@ -10,10 +10,7 @@ echo "CLASSPATH:"$CLASSPATH
 echo " "
 echo "Compiling these projects:"
 for i in * ; do
-  if [ -d "$i" ] && [ ! "$i" = "lib" ]; then
-    cd "$i"
-    
-  if [ -d "$i" ] && [ ! "$i" = "img" ]; then
+  if ([ -d "$i" ] && [ ! "$i" = "lib" ]) || ([ !  "$i" = "img"]); then
     cd "$i"
 
     if [ -f "manifest.mf" ]; then
