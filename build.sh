@@ -10,6 +10,9 @@ echo "CLASSPATH:"$CLASSPATH
 echo " "
 echo "Compiling these projects:"
 for i in * ; do
+  if [ -d "$i" ] && [ ! "$i" = "lib" ]; then
+    cd "$i"
+    
   if [ -d "$i" ] && [ ! "$i" = "img" ]; then
     cd "$i"
 
